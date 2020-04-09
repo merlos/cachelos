@@ -4,10 +4,11 @@
   "description": "Simple local storage cache for JSON responses ",
   "main": "dist/index.js",
   "directories": {
-    "lib": "lib"
+    "src": "src"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "npx webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.8.7"
+    "@babel/polyfill": "^7.8.7",
+    "babel-loader": "^8.1.0"
   }
 }
