@@ -21,6 +21,7 @@ module.exports = {
     filename: '[name].js',
     path: path.resolve(__dirname, 'build'),
     libraryTarget: 'umd',
+    library: 'cachelos',
   },
   devServer: {
     contentBase: path.join(__dirname, 'examples/'),
