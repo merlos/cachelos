@@ -60,7 +60,7 @@ const example3 = async () => {
       expiresAfter: 5, // Time an item in the cache will persist as valid in ms}
     }
     console.log('==== example 3 ========')
-    console.log(`Cache items will expire after ${config.expiresAfter} ms`)
+    console.log(`Cache items will expire after ${config.expiresAfter} sec`)
     const cache = Cache(config)
     const url = './users.json'
 
@@ -84,9 +84,12 @@ const example3 = async () => {
 
     console.log('1) myCacheFech fetch ')
     const users = await myCacheFetch(url)
+    const users2 = await myCacheFetch(url)
     console.log('2) Waiting 6 seconds:')
     await sleep(6)
     console.log('   done waiting')
+    console.log('   isValid?', cache.isValid(url))
+    const users3 = await myCacheFetch(url)
   } catch (error) {
     console.log(error)
   }
