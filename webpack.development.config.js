@@ -22,5 +22,11 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
     libraryTarget: 'umd',
   },
+  devServer: {
+    contentBase: path.join(__dirname, 'examples/'),
+    port: 3000,
+    publicPath: 'http://localhost:3000/build/',
+    hotOnly: true,
+  },
   plugins: [new CleanWebpackPlugin()],
 }
