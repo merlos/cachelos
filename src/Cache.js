@@ -11,7 +11,7 @@ const Cache = ({ validTime }) => {
      * Time an item is valid by default.
      * Expressed in milliseconds
      */
-    validTime: validTime ?? 3600 * 1000, //
+    validTime: validTime ?? 3600 * 1000,
   }
 
   cache.expiresOnKey = (url) => {

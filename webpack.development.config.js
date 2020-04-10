@@ -4,9 +4,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
   entry: {
     index: './src/index.js',
-    example: './examples/index.js',
+    example: './examples/example.js',
   },
-  mode: 'production',
+  mode: 'development',
   module: {
     rules: [
       {
@@ -19,7 +19,8 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
+    libraryTarget: 'umd',
   },
   plugins: [new CleanWebpackPlugin()],
 }
