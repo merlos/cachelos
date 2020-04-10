@@ -5,6 +5,16 @@
     <script src="build/index.js"></script>
   </body>
   <script>
-    var mycache = cachelos.Cache(123)
+    var myCache = cachelos.Cache({ name: 'umd', expiresAfter: 10 })
+    //This will make a request to the server
+    var url = './users.json'
+    myCache.fetch(url).then(function (data) {
+      console.log('First fetch', data)
+      myCache.fetch(url).then(function (data) {
+        console.log('Second fetch', data)
+        //If at some point you need to clear the cache
+        //myCache.clear()
+      })
+    })
   </script>
 </html>
