@@ -1,7 +1,7 @@
 {
   "name": "@merlos/cachelos",
-  "version": "1.0.0",
-  "description": "Simple local storage cache for JSON responses ",
+  "version": "0.1.0",
+  "description": "Simple local storage cache for JSON responses",
   "main": "dist/index.js",
   "module": "src/index.js",
   "directories": {
