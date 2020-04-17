@@ -1,4 +1,5 @@
 # Cachelos
+[![npm version](https://badge.fury.io/js/%40merlos%2Fcachelos.svg)](https://badge.fury.io/js/%40merlos%2Fcachelos)
 
 Simple browser cache for storing JSON requests in a Local Storage cache.
 
