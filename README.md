@@ -4,6 +4,13 @@ Simple browser cache for storing JSON requests in a Local Storage cache.
 
 ## Usage
 
+```
+npm install --save @merlos/cachelos
+```
+
+Then in your code:
+
+
 ```js static
 import { Cache } from 'cachelos'
 
