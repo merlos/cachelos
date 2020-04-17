@@ -140,3 +140,6 @@ Builds the package for distribution
 ### `npm test`
 
 Runs the tests
+
+
+## License MIT
